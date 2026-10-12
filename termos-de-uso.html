@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Termos de Uso | Audax Company</title>
+  <meta name="description" content="Termos de Uso da Audax Company. Regras, condições e diretrizes de utilização de nossos serviços e plataformas.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #07090e;
+      --card-bg: rgba(15, 20, 32, 0.75);
+      --card-border: rgba(201, 168, 39, 0.22);
+      --gold: #C9A827;
+      --gold-light: #e0bc3a;
+      --gold-gradient: linear-gradient(135deg, #e0bc3a 0%, #C9A827 50%, #9e7f16 100%);
+      --text: #e2e8f0;
+      --text-muted: #94a3b8;
+      --font: 'Montserrat', sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg);
+      background-image: 
+        radial-gradient(ellipse 80% 50% at 50% -20%, rgba(201, 168, 39, 0.15), transparent),
+        radial-gradient(ellipse 60% 40% at 50% 100%, rgba(15, 23, 42, 0.8), transparent);
+      color: var(--text);
+      font-family: var(--font);
+      line-height: 1.7;
+      min-height: 100vh;
+      padding: 0;
+    }
+    header {
+      border-bottom: 1px solid var(--card-border);
+      background: rgba(7, 9, 14, 0.85);
+      backdrop-filter: blur(12px);
+      padding: 24px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .header-container {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .brand-title {
+      font-size: 22px;
+      font-weight: 800;
+      background: var(--gold-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: 0.5px;
+    }
+    .nav-links {
+      display: flex;
+      gap: 14px;
+      align-items: center;
+    }
+    .nav-btn {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 8px 16px;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: all 0.2s ease;
+    }
+    .nav-btn:hover {
+      color: #fff;
+      border-color: var(--gold);
+    }
+    .nav-btn.primary {
+      background: var(--gold-gradient);
+      color: #07090e;
+      border: none;
+      font-weight: 700;
+    }
+    .nav-btn.primary:hover {
+      opacity: 0.92;
+      transform: translateY(-1px);
+    }
+    main {
+      max-width: 900px;
+      margin: 40px auto 80px;
+      padding: 0 20px;
+    }
+    .page-header {
+      margin-bottom: 32px;
+      text-align: left;
+    }
+    .page-badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--gold);
+      background: rgba(201, 168, 39, 0.12);
+      border: 1px solid var(--card-border);
+      padding: 6px 14px;
+      border-radius: 20px;
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+    .updated-date {
+      color: var(--text-muted);
+      font-size: 13px;
+    }
+    .highlight-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-left: 4px solid var(--gold);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-bottom: 32px;
+      font-size: 15px;
+      color: #f1f5f9;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+    .content-card {
+      background: var(--card-bg);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: 14px;
+      padding: 32px;
+      margin-bottom: 24px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    }
+    section {
+      margin-bottom: 28px;
+    }
+    section:last-child {
+      margin-bottom: 0;
+    }
+    h2 {
+      color: var(--gold);
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    p {
+      margin-bottom: 12px;
+      color: var(--text);
+      font-size: 14.5px;
+    }
+    ul {
+      margin: 8px 0 16px 22px;
+      color: var(--text);
+      font-size: 14px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    li strong {
+      color: #fff;
+    }
+    a {
+      color: var(--gold);
+      text-decoration: underline;
+    }
+    a:hover {
+      color: var(--gold-light);
+    }
+    footer {
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      background: #05070a;
+      padding: 32px 20px;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 13px;
+    }
+    footer p {
+      color: var(--text-muted);
+      margin: 4px 0;
+    }
+    footer strong {
+      color: var(--gold);
+    }
+    @media (max-width: 640px) {
+      h1 { font-size: 26px; }
+      .content-card { padding: 22px 18px; }
+      .header-container { flex-direction: column; align-items: flex-start; }
+      .nav-links { width: 100%; justify-content: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-container">
+    <div class="brand-title">AUDAX COMPANY</div>
+    <div class="nav-links">
+      <a href="index.html" class="nav-btn">← Voltar ao Início</a>
+      <a href="politicas-de-privacidade.html" class="nav-btn">Política de Privacidade</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="page-header">
+    <div class="page-badge">Diretrizes & Condições</div>
+    <h1>Termos de Uso</h1>
+    <div class="updated-date">Última atualização: Outubro de 2026</div>
+  </div>
+
+  <div class="highlight-card">
+    Bem-vindo à <strong>Audax Company</strong>. Ao navegar em nossas páginas ou se aplicar para nossas consultorias e diagnósticos, você aceita integralmente estes Termos de Uso.
+  </div>
+
+  <div class="content-card">
+    <section>
+      <h2>1. Aceitação dos Termos</h2>
+      <p>O acesso e a utilização dos serviços, materiais, páginas e diagnósticos promovidos pela <strong>Audax Company</strong> estão condicionados à aceitação e ao cumprimento destes Termos.</p>
+    </section>
+
+    <section>
+      <h2>2. Escopo dos Serviços e Diagnóstico</h2>
+      <p>A <strong>Audax Company</strong> presta serviços de aceleração de receitas, diagnóstico comercial e estruturação de times comerciais (SDRs, Closers, Social Selling). O diagnóstico inicial ofertado possui caráter informativo e estratégico.</p>
+      <ul>
+        <li><strong>Gratuidade da Sessão Inicial:</strong> O Diagnóstico Comercial ofertado é 100% gratuito e não gera obrigatoriedade de contratação dos programas avançados da empresa.</li>
+        <li><strong>Compromisso de Presença:</strong> Devido à alta demanda na agenda de nossos especialistas, solicitamos aviso prévio de ao menos 3 horas caso haja necessidade de reagendamento.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. Responsabilidades do Usuário</h2>
+      <p>Ao submeter informações através de nossos formulários, você se compromete a:</p>
+      <ul>
+        <li>Fornecer dados cadastrais autênticos, atuais e fidedignos;</li>
+        <li>Utilizar nossos conteúdos exclusivamente para sua finalidade educacional e estratégica permitida;</li>
+        <li>Não reproduzir, distribuir, piratear ou revender quaisquer materiais proprietários da Audax Company sem autorização formal prévia.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. Propriedade Intelectual</h2>
+      <p>Todas as marcas, metodologias comerciais, designs, scripts, códigos e conteúdos disponibilizados no website são de propriedade exclusiva da <strong>Audax Company</strong>, protegidos pela Lei de Direitos Autorais e normas internacionais de Propriedade Intelectual.</p>
+    </section>
+
+    <section>
+      <h2>5. Limitação de Responsabilidade</h2>
+      <p>A aplicação de metodologias e estratégias de negócios depende de múltiplos fatores operacionais e mercadológicos inerentes a cada empresa. Por esse motivo:</p>
+      <ul>
+        <li>A Audax Company não garante resultados financeiros idênticos para todos os participantes;</li>
+        <li>Não nos responsabilizamos por perdas indiretas, imprevistos comerciais ou instabilidades em ferramentas de terceiros (como plataformas de reunião ou redes sociais).</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>6. Disposições Finais e Foro</h2>
+      <p>Estes termos são regidos pelas leis da República Federativa do Brasil. Quaisquer disputas serão preferencialmente dirimidas de forma amigável ou no foro competente de domicílio do cliente.</p>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <p>© 2026 <strong>Audax Company</strong>. Todos os direitos reservados.</p>
+  <p style="margin-top: 10px;">
+    <a href="index.html">Início</a> &nbsp;|&nbsp; 
+    <a href="termos-de-uso.html">Termos de Uso</a> &nbsp;|&nbsp; 
+    <a href="politicas-de-privacidade.html">Política de Privacidade</a>
+  </p>
+</footer>
+
+</body>
+</html>

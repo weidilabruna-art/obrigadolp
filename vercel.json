@@ -1,0 +1,21 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/politicas-de-privacidade",
+      "destination": "/politicas-de-privacidade.html"
+    },
+    {
+      "source": "/politica-de-privacidade",
+      "destination": "/politicas-de-privacidade.html"
+    },
+    {
+      "source": "/termos-de-uso",
+      "destination": "/termos-de-uso.html"
+    },
+    {
+      "source": "/termos",
+      "destination": "/termos-de-uso.html"
+    }
+  ]
+}

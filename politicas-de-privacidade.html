@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidade | Audax Company</title>
+  <meta name="description" content="Política de Privacidade da Audax Company. Saiba como protegemos seus dados pessoais de acordo com a LGPD.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #07090e;
+      --card-bg: rgba(15, 20, 32, 0.75);
+      --card-border: rgba(201, 168, 39, 0.22);
+      --gold: #C9A827;
+      --gold-light: #e0bc3a;
+      --gold-gradient: linear-gradient(135deg, #e0bc3a 0%, #C9A827 50%, #9e7f16 100%);
+      --text: #e2e8f0;
+      --text-muted: #94a3b8;
+      --font: 'Montserrat', sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg);
+      background-image: 
+        radial-gradient(ellipse 80% 50% at 50% -20%, rgba(201, 168, 39, 0.15), transparent),
+        radial-gradient(ellipse 60% 40% at 50% 100%, rgba(15, 23, 42, 0.8), transparent);
+      color: var(--text);
+      font-family: var(--font);
+      line-height: 1.7;
+      min-height: 100vh;
+      padding: 0;
+    }
+    header {
+      border-bottom: 1px solid var(--card-border);
+      background: rgba(7, 9, 14, 0.85);
+      backdrop-filter: blur(12px);
+      padding: 24px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .header-container {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .brand-title {
+      font-size: 22px;
+      font-weight: 800;
+      background: var(--gold-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: 0.5px;
+    }
+    .nav-links {
+      display: flex;
+      gap: 14px;
+      align-items: center;
+    }
+    .nav-btn {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 8px 16px;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: all 0.2s ease;
+    }
+    .nav-btn:hover {
+      color: #fff;
+      border-color: var(--gold);
+    }
+    .nav-btn.primary {
+      background: var(--gold-gradient);
+      color: #07090e;
+      border: none;
+      font-weight: 700;
+    }
+    .nav-btn.primary:hover {
+      opacity: 0.92;
+      transform: translateY(-1px);
+    }
+    main {
+      max-width: 900px;
+      margin: 40px auto 80px;
+      padding: 0 20px;
+    }
+    .page-header {
+      margin-bottom: 32px;
+      text-align: left;
+    }
+    .page-badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--gold);
+      background: rgba(201, 168, 39, 0.12);
+      border: 1px solid var(--card-border);
+      padding: 6px 14px;
+      border-radius: 20px;
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+    .updated-date {
+      color: var(--text-muted);
+      font-size: 13px;
+    }
+    .highlight-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-left: 4px solid var(--gold);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-bottom: 32px;
+      font-size: 15px;
+      color: #f1f5f9;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+    .content-card {
+      background: var(--card-bg);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: 14px;
+      padding: 32px;
+      margin-bottom: 24px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    }
+    section {
+      margin-bottom: 28px;
+    }
+    section:last-child {
+      margin-bottom: 0;
+    }
+    h2 {
+      color: var(--gold);
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    p {
+      margin-bottom: 12px;
+      color: var(--text);
+      font-size: 14.5px;
+    }
+    ul {
+      margin: 8px 0 16px 22px;
+      color: var(--text);
+      font-size: 14px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    li strong {
+      color: #fff;
+    }
+    a {
+      color: var(--gold);
+      text-decoration: underline;
+    }
+    a:hover {
+      color: var(--gold-light);
+    }
+    footer {
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      background: #05070a;
+      padding: 32px 20px;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 13px;
+    }
+    footer p {
+      color: var(--text-muted);
+      margin: 4px 0;
+    }
+    footer strong {
+      color: var(--gold);
+    }
+    @media (max-width: 640px) {
+      h1 { font-size: 26px; }
+      .content-card { padding: 22px 18px; }
+      .header-container { flex-direction: column; align-items: flex-start; }
+      .nav-links { width: 100%; justify-content: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-container">
+    <div class="brand-title">AUDAX COMPANY</div>
+    <div class="nav-links">
+      <a href="index.html" class="nav-btn">← Voltar ao Início</a>
+      <a href="termos-de-uso.html" class="nav-btn">Termos de Uso</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="page-header">
+    <div class="page-badge">LGPD & Segurança</div>
+    <h1>Política de Privacidade</h1>
+    <div class="updated-date">Última atualização: Outubro de 2026</div>
+  </div>
+
+  <div class="highlight-card">
+    A <strong>Audax Company</strong> está rigorosamente comprometida com a privacidade e proteção dos seus dados pessoais, operando em conformidade com a Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018).
+  </div>
+
+  <div class="content-card">
+    <section>
+      <h2>1. Dados Pessoais Coletados</h2>
+      <p>Coletamos informações que você nos fornece voluntariamente ou geradas durante a sua navegação, tais como:</p>
+      <ul>
+        <li><strong>Dados de identificação e contato:</strong> Nome completo, endereço de e-mail, número de WhatsApp/telefone.</li>
+        <li><strong>Dados profissionais e de negócio:</strong> Cargo, empresa, segmento de mercado, faturamento aproximado e respostas de formulários de diagnóstico.</li>
+        <li><strong>Dados de navegação técnica:</strong> Endereço IP, tipo de navegador, sistema operacional, cookies de sessão e interações com a página.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>2. Finalidade do Tratamento de Dados</h2>
+      <p>Seus dados são tratados estritamente para as seguintes finalidades:</p>
+      <ul>
+        <li>Agendamento, confirmação e realização da sessão de <strong>Diagnóstico Comercial Gratuito</strong>.</li>
+        <li>Contato direto via WhatsApp ou e-mail por nossa equipe de consultores.</li>
+        <li>Envio de materiais educativos, estudos de caso e comunicados relevantes sobre vendas e gestão comercial.</li>
+        <li>Aprimoramento contínuo da experiência de navegação e análise de desempenho dos nossos canais.</li>
+        <li>Cumprimento de exigências legais e regulatórias brasileiras.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. Base Legal (LGPD)</h2>
+      <p>O tratamento dos seus dados ocorre com base nos fundamentos previstos no art. 7º da LGPD:</p>
+      <ul>
+        <li><strong>Consentimento do titular:</strong> fornecido ao preencher nossos formulários de contato e aplicação.</li>
+        <li><strong>Procedimentos preliminares a contrato:</strong> para agendamento do diagnóstico e consultorias solicitadas.</li>
+        <li><strong>Legítimo interesse:</strong> para aprimoramento de nossos serviços e comunicações estratégicas.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. Compartilhamento e Sigilo</h2>
+      <p><strong>A Audax Company não comercializa, aluga ou transfere seus dados pessoais a terceiros com fins lucrativos.</strong></p>
+      <p>O compartilhamento ocorre unicamente com fornecedores essenciais à operação (como plataformas de automação de e-mail, CRM e hospedagem em nuvem), sempre sob estritos deveres de sigilo e segurança.</p>
+    </section>
+
+    <section>
+      <h2>5. Uso de Cookies e Pixels</h2>
+      <p>Utilizamos cookies e tecnologias de rastreamento para:</p>
+      <ul>
+        <li><strong>Cookies essenciais:</strong> garantir a funcionalidade correta e segura do website.</li>
+        <li><strong>Cookies de análise:</strong> entender métricas de tráfego (Google Analytics).</li>
+        <li><strong>Cookies de anúncios e conversão:</strong> medir a eficácia de campanhas publicitárias (Meta Pixel, Google Ads).</li>
+      </ul>
+      <p>Você pode desativar ou gerenciar cookies a qualquer momento nas configurações do seu navegador.</p>
+    </section>
+
+    <section>
+      <h2>6. Seus Direitos como Titular</h2>
+      <p>Nos termos do art. 18 da LGPD, você pode a qualquer momento solicitar:</p>
+      <ul>
+        <li>Confirmação da existência de tratamento dos seus dados;</li>
+        <li>Acesso facilitado aos dados coletados;</li>
+        <li>Correção de dados incompletos ou inexatos;</li>
+        <li>Anonimização, bloqueio ou eliminação de dados desnecessários;</li>
+        <li>Revogação do consentimento para recebimento de comunicações.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>7. Canal de Contato com o DPO</h2>
+      <p>Para exercer qualquer um dos seus direitos ou esclarecer dúvidas sobre nossa política de proteção de dados, entre em contato:</p>
+      <ul>
+        <li><strong>E-mail de Privacidade:</strong> <a href="mailto:privacidade@audaxcompany.com">privacidade@audaxcompany.com</a></li>
+        <li><strong>Website oficial:</strong> <a href="index.html">Audax Company</a></li>
+      </ul>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <p>© 2026 <strong>Audax Company</strong>. Todos os direitos reservados.</p>
+  <p style="margin-top: 10px;">
+    <a href="index.html">Início</a> &nbsp;|&nbsp; 
+    <a href="termos-de-uso.html">Termos de Uso</a> &nbsp;|&nbsp; 
+    <a href="politicas-de-privacidade.html">Política de Privacidade</a>
+  </p>
+</footer>
+
+</body>
+</html>
